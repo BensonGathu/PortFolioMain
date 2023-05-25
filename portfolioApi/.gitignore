@@ -1,0 +1,10 @@
+education/__pycache__/*
+education/migrations/*
+experience/__pycache__/*
+experience/migrations/*
+mainApp/__pycache__/*
+mainApp/migrations/*
+projects/__pycache__/*
+projects/migrations/*
+userProfile/__pycache__/*
+userProfile/migrations/*
