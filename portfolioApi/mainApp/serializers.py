@@ -31,7 +31,7 @@ class JobSerializer(serializers.ModelSerializer):
           model = Job
           fields = [ "title", "company_name", "company_link", "company_logo", "type", "description", "start_date", "end_date", "code_related"]
 
-
+ 
     
 class ProjectSerializer(serializers.ModelSerializer):
     class Meta:
