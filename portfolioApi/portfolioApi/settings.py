@@ -96,16 +96,27 @@ WSGI_APPLICATION = 'portfolioApi.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE'  : 'django.db.backends.mysql', 
+#         'NAME'    : config('DB_NAME'),                
+#         'USER'    : config('DB_USER'),                    
+#         'PASSWORD': config('DB_PASSWORD'),             
+#         'HOST'    : config('DB_HOST'),                 
+#         'PORT'    : config('PORT'),  
+#     }
+# }
 DATABASES = {
-    'default': {
-        'ENGINE'  : 'django.db.backends.mysql', 
-        'NAME'    : config('DB_NAME'),                
-        'USER'    : config('DB_USER'),                    
-        'PASSWORD': config('DB_PASSWORD'),             
-        'HOST'    : config('DB_HOST'),                 
-        'PORT'    : config('PORT'),  
-    }
-}
+       'default': {
+           'ENGINE': 'django.db.backends.postgresql_psycopg2',
+           'NAME': config('DB_NAME'),
+           'USER': config('DB_USER'),
+           'PASSWORD': config('DB_PASSWORD'),
+           
+       }
+       
+   }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
