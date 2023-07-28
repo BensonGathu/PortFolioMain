@@ -13,13 +13,13 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 # import django_heroku
-from decouple import config,Csv
+from decouple import config, Csv
 import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-MODE=config("MODE", default="dev")
+MODE = config("MODE", default="dev")
 
 
 # Quick-start development settings - unsuitable for production
@@ -60,7 +60,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-      'corsheaders.middleware.CorsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 
 ]
 
@@ -98,24 +98,26 @@ WSGI_APPLICATION = 'portfolioApi.wsgi.application'
 
 # DATABASES = {
 #     'default': {
-#         'ENGINE'  : 'django.db.backends.mysql', 
-#         'NAME'    : config('DB_NAME'),                
-#         'USER'    : config('DB_USER'),                    
-#         'PASSWORD': config('DB_PASSWORD'),             
-#         'HOST'    : config('DB_HOST'),                 
-#         'PORT'    : config('PORT'),  
+#         'ENGINE'  : 'django.db.backends.mysql',
+#         'NAME'    : config('DB_NAME'),
+#         'USER'    : config('DB_USER'),
+#         'PASSWORD': config('DB_PASSWORD'),
+#         'HOST'    : config('DB_HOST'),
+#         'PORT'    : config('PORT'),
 #     }
 # }
 DATABASES = {
-       'default': {
-           'ENGINE': 'django.db.backends.postgresql_psycopg2',
-           'NAME': config('DB_NAME'),
-           'USER': config('DB_USER'),
-           'PASSWORD': config('DB_PASSWORD'),
-           
-       }
-       
-   }
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': config('DB_NAME'),
+        'USER': config('DB_USER'),
+        'PASSWORD': config('DB_PASSWORD'),
+        'HOST': config('DB_HOST'),
+        'PORT': config('PORT'),
+
+    }
+
+}
 
 
 # Password validation

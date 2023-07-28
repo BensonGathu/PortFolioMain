@@ -1,0 +1,40 @@
+version: '3.1'
+services:
+  backendAPI:
+    image: bensongathu/portfolio-backendapi:1.0.0
+    build:  ./portfolioApi
+    restart: always
+    ports:
+      - 8000:8000
+
+    depends_on:
+      - postgres
+
+
+  postgres:
+    container_name: postgres
+    image: postgres
+    environment:
+    - POSTGRES_USER=ben
+    - POSTGRES_DB=resume
+    - POSTGRES_PASSWORD=portfolio2023
+
+    ports:
+      - 5432:5432
+    
+    command: postgresdb
+
+    volumes:
+      - pgdata:/var/postgresql/data
+
+  redis:
+        image: redis
+        container_name: redis
+        ports:
+            - '6379:6379'
+        environment:
+          - REDIS_PASSWORD=TransP0rt2023
+
+volumes:
+  pgdata:
+
