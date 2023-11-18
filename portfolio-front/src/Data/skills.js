@@ -1,0 +1,15 @@
+export const mySkills = [
+  "Django",
+  "React",
+  "Angular",
+  "Nodejs",
+  "Flutter",
+  "MySQL",
+  "PostgreSQL",
+  "Docker",
+  "Jenkins",
+  "Ansible",
+  "Kubernetes",
+  "AWS/GCP/AZURE",
+  "TailwindCSS",
+];

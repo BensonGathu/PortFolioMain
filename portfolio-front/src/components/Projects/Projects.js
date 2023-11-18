@@ -3,7 +3,7 @@ import React, { useRef, useState, useEffect } from "react";
 import TextTruncate from "react-text-truncate"; // recommend
 // import { projects } from "../../data";
 import axios from "axios";
-
+import { myProjects } from "../../Data/Projects";
 export default function Projects() {
   const [projects, setProjects] = useState([
     {
@@ -66,7 +66,7 @@ export default function Projects() {
           </p>
         </div>
         <div className="flex flex-wrap -m-4 ">
-          {projects.map((project) => (
+          {myProjects.map((project) => (
             <a
               href={project.live_link}
               key={project.image}
@@ -77,11 +77,11 @@ export default function Projects() {
                 <img
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={`http://${process.env.REACT_APP_IP}:${process.env.REACT_APP_PORT}${project.image}`}
+                  src={project.image}
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
-                    {project.stack}
+                    {project.languages}
                   </h2>
                   <h1 className="title-font text-lg font-medium text-white mb-3">
                     {project.title}

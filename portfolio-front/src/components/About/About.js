@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import axios from "axios";
-
+import {BensonCv} from '../../Data/BensonCv.pdf'
 export default function About() {
   const [userInfo, setUserInfo] = useState([
     { avatar: "", title: "", bio: "", cv: "", user: "" },
@@ -45,10 +45,15 @@ export default function About() {
       <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-            Hi, I'm Benson,
-            <br className="hidden lg:inline-block" />a {userInfo[0].title}.
+            Hi, I'm Benson Gathu,
+            <br className="hidden lg:inline-block" />a FullStack Developer.
           </h1>
-          <p className="mb-8 leading-relaxed">{userInfo[0].bio}</p>
+          <p className="mb-8 leading-relaxed">
+            A passionate Full Stack Developer with a strong skill set in
+            developing and implementing scalable mobile and web applications using popular
+            tools and frameworks like Django, React, and Flutter.... Additionally,
+            I have a keen interest in DevOps practices.
+          </p>
           <div className="flex justify-center">
             <a
               href="#contact"
@@ -63,8 +68,9 @@ export default function About() {
               See My Past Work
             </a>
             <a
-              download target="_blank"
-              href={`http://${process.env.REACT_APP_IP}:${process.env.REACT_APP_PORT}${userInfo[0].cv}`}
+              download
+              target="_blank"
+              href={{BensonCv}}
               className="ml-4  inline-flex text-white bg-red-700	 border-0 py-2 px-6 focus:outline-none hover:bg-red-900 hover:text-white rounded text-lg"
             >
               Download Resume

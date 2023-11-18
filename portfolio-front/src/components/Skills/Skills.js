@@ -1,6 +1,6 @@
 import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import React, { useRef, useState, useEffect } from "react";
- 
+import { mySkills } from "../../Data/skills";
 import axios from "axios";
 
 export default function Skills(props) {
@@ -28,7 +28,7 @@ export default function Skills(props) {
             name: skillData.name,
           };
         });
-      
+
         setSkills(tranformedData);
       })
       .catch((error) => {
@@ -45,18 +45,21 @@ export default function Skills(props) {
             Skills &amp; Technologies
           </h1>
           <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi sit
-            ipsa delectus eum quo voluptas aspernatur accusantium distinctio
-            possimus est.
+            As a skilled professional, I bring a diverse range of expertise to
+            the table. My proficiency spans across various technologies and
+            domains, showcasing my capabilities in web development, programming
+            languages, front-end and back-end frameworks, database management,
+            version control, and responsive design. Explore below to see a
+            detailed list of my specific skills and technologies.
           </p>
         </div>
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-4">
-          {skills.map((skill) => (
+          {mySkills.map((skill) => (
             <div key={skill} className="p-2 sm:w-1/3 w-full">
               <div className="bg-gray-800 rounded flex p-4 h-full items-center">
                 <BadgeCheckIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
                 <span className="title-font font-medium text-white">
-                  {skill.name}
+                  {skill}
                 </span>
               </div>
             </div>
