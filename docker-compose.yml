@@ -10,7 +10,7 @@ services:
     depends_on:
       - postgres
 
-    frontend:
+  frontend:
     image: bensongathu/portfolio-frontend:1.0.0
     build:  ./portfolio-front
     restart: always
