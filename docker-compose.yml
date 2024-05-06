@@ -10,6 +10,15 @@ services:
     depends_on:
       - postgres
 
+    frontend:
+    image: bensongathu/portfolio-frontend:1.0.0
+    build:  ./portfolio-front
+    restart: always
+    ports:
+      - 3000:3000
+
+    depends_on:
+      - postgres
 
   postgres:
     container_name: postgres
