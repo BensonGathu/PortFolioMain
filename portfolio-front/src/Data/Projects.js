@@ -1,7 +1,16 @@
 export const myProjects = [
+  {
+    code_link: "https://github.com/BensonGathu/AVA",
+    live_link: "https://github.com/BensonGathu/AVA",
+    image: "https://stickernova.fra1.cdn.digitaloceanspaces.com/On%20Boarding%20Screen%201.png",
+    description: "Smartphone app enabling users to seek assistance for roadside emergencies like towing, jump-starting, etc. It also offers memberships, which can be standalone or associated with different insurance providers. Companies have access to a portal to oversee member subscriptions and facilitate service requests on their behalf.",
+    title: "AVA - Road Rescue services",
+    stack: "MERN",
+    languages: "Flutter, Nodejs, MySQL",
+  },
     {
       code_link: "",
-      live_link: "",
+      live_link: "https://github.com/BensonGathu/TransportCombined",
       image: "https://stickernova.fra1.cdn.digitaloceanspaces.com/Portfolio/psv.png",
       description: "Online PSV transportation booking system using MERN stack for efficient and convenient travel planning and management.",
       title: "PSV Booking System",
@@ -9,13 +18,13 @@ export const myProjects = [
       languages: "Flutter, Nodejs, React, Mongo",
     },
     {
-      code_link: "",
-      live_link: "https://shaddyfarm-niscqp5l6-bensongathu.vercel.app/",
+      code_link: "http://wellherbs.co.ke/",
+      live_link: "http://wellherbs.co.ke/",
       image: "https://stickernova.fra1.cdn.digitaloceanspaces.com/Portfolio/Screenshot%20from%202023-11-18%2012-44-09.png",
       description: "MEAN stack E-commerce platform for WellNess Herbs, offering a seamless shopping experience for wellness products.",
       title: "WellNess Herbs",
-      stack: "MEAN",
-      languages: "Angular, Node, Mongo",
+      stack: "MERN",
+      languages: "React, Node, Mongo",
     },
     {
       code_link: "https://github.com/BensonGathu/WallApp",
@@ -45,31 +54,22 @@ export const myProjects = [
       languages: "Flutter, Node, Mongo",
     },
     {
-      code_link: "",
-      live_link: "",
+      code_link: "https://github.com/BensonGathu/schoolSystem",
+      live_link: "https://github.com/BensonGathu/schoolSystem",
       image: "https://assets.materialup.com/uploads/18e76156-7562-43b3-9730-d88e7a69feef/preview.png",
       description: "Efficient Django-powered School Management System for streamlined administrative tasks and student data management.",
       title: "School Management System",
       stack: "",
-      languages: "Django",
+      languages: "Django, PostgreSQL",
     },
     {
-      code_link: "",
-      live_link: "",
+      code_link: "https://github.com/BensonGathu/yarnandcrotcheton-",
+      live_link: "http://crotchets.gapps.website/",
       image: "https://okcredit-blog-images-prod.storage.googleapis.com/2021/04/ecommerce3-1.jpg",
       description: "Django and PostgreSQL-based E-commerce platform for seamless online shopping experiences, ensuring secure transactions and user satisfaction.",
       title: "E-commerce",
       stack: "",
       languages: "Django, PostgreSQL",
-    },
-    {
-      code_link: "https://github.com/BensonGathu/schoolSystem",
-      live_link: "",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW01wfnT4kz8hugwFRDbDK0FIbn46IJfYZKw&usqp=CAU",
-      description: "Pomper Safaris: Django and PostgreSQL platform for hassle-free booking of tours and safaris, enhancing travel experiences with a user-friendly interface.",
-      title: "Pomper Safaris",
-      stack: "",
-      languages: "Django, PostgreSQL",
-    },
+    }
   ];
   

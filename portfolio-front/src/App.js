@@ -7,7 +7,7 @@ import Skills from "./components/Skills/Skills";
 import Certifications from "./components/Certifications/Certifications";
 export default function App() {
   return (
-    <main className="text-gray-400 bg-gray-900 body-font">
+    <main className="text-gray-400 bg-gray-900 body-font center">
 
       <Navbar />
       <About />

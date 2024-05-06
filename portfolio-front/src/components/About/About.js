@@ -1,6 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
 import axios from "axios";
-import {BensonCv} from '../../Data/BensonCv.pdf'
 export default function About() {
   const [userInfo, setUserInfo] = useState([
     { avatar: "", title: "", bio: "", cv: "", user: "" },
@@ -70,7 +69,8 @@ export default function About() {
             <a
               download
               target="_blank"
-              href={{BensonCv}}
+              href="/BensonCv.pdf"
+
               className="ml-4  inline-flex text-white bg-red-700	 border-0 py-2 px-6 focus:outline-none hover:bg-red-900 hover:text-white rounded text-lg"
             >
               Download Resume
