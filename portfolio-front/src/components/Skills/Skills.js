@@ -1,7 +1,7 @@
 import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import React, { useRef, useState, useEffect } from "react";
 import { mySkills } from "../../Data/skills";
-import axios from "axios";
+// import axios from "axios";
 
 export default function Skills(props) {
   const [skills, setSkills] = useState([{ name: "" }]);
@@ -10,31 +10,31 @@ export default function Skills(props) {
     "Content-Type": "application/json",
     Authorization: "JWT fefege...",
   };
-  useEffect(() => {
-    axios
-      .get(
-        `http://${process.env.REACT_APP_IP}:${process.env.REACT_APP_PORT}/api/v1/languages/`,
-        {
-          headers: headers,
-        }
-      )
-      .then(async (response) => {
-        // If request is good...
+  // useEffect(() => {
+  //   axios
+  //     .get(
+  //       `http://${process.env.REACT_APP_IP}:${process.env.REACT_APP_PORT}/api/v1/languages/`,
+  //       {
+  //         headers: headers,
+  //       }
+  //     )
+  //     .then(async (response) => {
+  //       // If request is good...
 
-        const data = await response.data;
+  //       const data = await response.data;
 
-        const tranformedData = data.map((skillData) => {
-          return {
-            name: skillData.name,
-          };
-        });
+  //       const tranformedData = data.map((skillData) => {
+  //         return {
+  //           name: skillData.name,
+  //         };
+  //       });
 
-        setSkills(tranformedData);
-      })
-      .catch((error) => {
-        console.log("error " + error);
-      });
-  }, []);
+  //       setSkills(tranformedData);
+  //     })
+  //     .catch((error) => {
+  //       console.log("error " + error);
+  //     });
+  // }, []);
 
   return (
     <section id="skills">

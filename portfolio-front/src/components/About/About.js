@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import axios from "axios";
+// import axios from "axios";
 export default function About() {
   const [userInfo, setUserInfo] = useState([
     { avatar: "", title: "", bio: "", cv: "", user: "" },
@@ -8,36 +8,36 @@ export default function About() {
     "Content-Type": "application/json",
     Authorization: "JWT fefege...",
   };
-  useEffect(() => {
-    axios
-      .get(
-        `http://${process.env.REACT_APP_IP}:${process.env.REACT_APP_PORT}/api/v1/getUser/`,
-        {
-          headers: headers,
-        }
-      )
-      .then(async (response) => {
-        // If request is good...
+  // useEffect(() => {
+  //   axios
+  //     .get(
+  //       `http://${process.env.REACT_APP_IP}:${process.env.REACT_APP_PORT}/api/v1/getUser/`,
+  //       {
+  //         headers: headers,
+  //       }
+  //     )
+  //     .then(async (response) => {
+  //       // If request is good...
 
-        const data = await response.data;
+  //       const data = await response.data;
 
-        const tranformedData = data.map((userData) => {
-          return {
-            id: userData.id,
-            avatar: userData.avatar,
-            bio: userData.bio,
-            cv: userData.cv,
-            title: userData.title,
-            user: userData.user,
-          };
-        });
+  //       const tranformedData = data.map((userData) => {
+  //         return {
+  //           id: userData.id,
+  //           avatar: userData.avatar,
+  //           bio: userData.bio,
+  //           cv: userData.cv,
+  //           title: userData.title,
+  //           user: userData.user,
+  //         };
+  //       });
 
-        setUserInfo(tranformedData);
-      })
-      .catch((error) => {
-        console.log("error " + error);
-      });
-  }, []);
+  //       setUserInfo(tranformedData);
+  //     })
+  //     .catch((error) => {
+  //       console.log("error " + error);
+  //     });
+  // }, []);
 
   return (
     <section id="about">
@@ -48,10 +48,7 @@ export default function About() {
             <br className="hidden lg:inline-block" />a FullStack Developer.
           </h1>
           <p className="mb-8 leading-relaxed">
-            A passionate Full Stack Developer with a strong skill set in
-            developing and implementing scalable mobile and web applications using popular
-            tools and frameworks like Django, React, and Flutter.... Additionally,
-            I have a keen interest in DevOps practices.
+          I am an enthusiastic Full Stack Developer with expertise in creating and deploying scalable mobile and web apps using prominent frameworks such as Django, React, and Flutter. Furthermore, I'm also skilled in DevOps engineering.
           </p>
           <div className="flex justify-center">
             <a

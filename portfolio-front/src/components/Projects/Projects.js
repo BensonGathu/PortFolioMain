@@ -2,7 +2,7 @@ import { CodeIcon } from "@heroicons/react/solid";
 import React, { useRef, useState, useEffect } from "react";
 import TextTruncate from "react-text-truncate"; // recommend
 // import { projects } from "../../data";
-import axios from "axios";
+// import axios from "axios";
 import { myProjects } from "../../Data/Projects";
 export default function Projects() {
   const [projects, setProjects] = useState([
@@ -21,37 +21,37 @@ export default function Projects() {
     Authorization: "JWT fefege...",
   };
 
-  useEffect(() => {
-    axios
-      .get(
-        `http://${process.env.REACT_APP_IP}:${process.env.REACT_APP_PORT}/api/v1/projects/`,
-        {
-          headers: headers,
-        }
-      )
-      .then(async (response) => {
-        // If request is good...
+  // useEffect(() => {
+  //   axios
+  //     .get(
+  //       `http://${process.env.REACT_APP_IP}:${process.env.REACT_APP_PORT}/api/v1/projects/`,
+  //       {
+  //         headers: headers,
+  //       }
+  //     )
+  //     .then(async (response) => {
+  //       // If request is good...
 
-        const data = await response.data;
+  //       const data = await response.data;
 
-        const tranformedData = data.map((projectData) => {
-          return {
-            code_link: projectData.code_link,
-            live_link: projectData.live_link,
-            image: projectData.image,
-            description: projectData.description,
-            title: projectData.title,
-            stack: projectData.stack,
-            languages: projectData.languages,
-          };
-        });
-        console.log(tranformedData);
-        setProjects(tranformedData);
-      })
-      .catch((error) => {
-        console.log("error " + error);
-      });
-  }, []);
+  //       const tranformedData = data.map((projectData) => {
+  //         return {
+  //           code_link: projectData.code_link,
+  //           live_link: projectData.live_link,
+  //           image: projectData.image,
+  //           description: projectData.description,
+  //           title: projectData.title,
+  //           stack: projectData.stack,
+  //           languages: projectData.languages,
+  //         };
+  //       });
+  //       console.log(tranformedData);
+  //       setProjects(tranformedData);
+  //     })
+  //     .catch((error) => {
+  //       console.log("error " + error);
+  //     });
+  // }, []);
 
   return (
     <section id="projects" className="text-gray-400 bg-gray-900 body-font">
