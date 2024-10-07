@@ -1,15 +1,16 @@
 export const mySkills = [
   "Django",
+  "Node",
   "React",
   "Angular",
-  "Nodejs",
   "Flutter",
-  "MySQL",
-  "PostgreSQL",
-  "Docker",
   "Jenkins",
+  "Docker",
   "Ansible",
   "Kubernetes",
-  "AWS/GCP/AZURE",
-  "TailwindCSS",
+  "Terraform",
+  "MySQL / PostgreSQL",
+  "MongoDB / DynamoDB",
+  
+  "AWS(SAA-C03)",
 ];

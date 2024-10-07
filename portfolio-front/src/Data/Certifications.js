@@ -2,7 +2,7 @@ export const certifications = [
   {
     title: "Cloud Computing",
     institution: "Azubi Africa",
-    year: "2023 - present",
+    year: "2023 - 2024",
   },
   {
     title: "DevOps Engineering",
