@@ -43,6 +43,14 @@ export const myProjects = [
     title: "WallGenix",
     stack: "",
     languages: "Flutter, Node, Mongo",
+  }, {
+    code_link: "",
+    live_link: "https://global.app.mi.com/details?lo=ID&la=en_US&id=com.genaiapps.stickernova",
+    image: process.env.PUBLIC_URL + "/images/stickerNova.png",
+    description: "StickerNova: Flutter-based app for creating and sharing vibrant WhatsApp stickers, adding fun and creativity to your conversations.",
+    title: "StickerNova",
+    stack: "",
+    languages: "Flutter, Node, Mongo",
   },
   {
     code_link: "https://github.com/BensonGathu/WallApis",
@@ -53,15 +61,7 @@ export const myProjects = [
     stack: "",
     languages: "Flutter, Node, Mongo",
   },
-  {
-    code_link: "",
-    live_link: "https://global.app.mi.com/details?lo=ID&la=en_US&id=com.genaiapps.stickernova",
-    image: process.env.PUBLIC_URL + "/images/stickerNova.png",
-    description: "StickerNova: Flutter-based app for creating and sharing vibrant WhatsApp stickers, adding fun and creativity to your conversations.",
-    title: "StickerNova",
-    stack: "",
-    languages: "Flutter, Node, Mongo",
-  },
+ 
   {
     code_link: "https://github.com/BensonGathu/schoolSystem",
     live_link: "https://github.com/BensonGathu/schoolSystem",
