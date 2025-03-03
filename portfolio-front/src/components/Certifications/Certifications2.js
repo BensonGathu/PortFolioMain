@@ -4,18 +4,18 @@
 import React from "react";
 import { TerminalIcon, UsersIcon ,DocumentIcon} from "@heroicons/react/solid";
 import { testimonials } from "../../data";
-import {certifications} from "../../Data/Certifications"
+import {certifications2} from "../../Data/Certifications2"
 
-export default function Certifications() {
+export default function Certifications2() {
   return (
     <section id="certifications">
       <div className="container px-5 py-10 mx-auto text-center">
         <DocumentIcon className="w-10 inline-block mb-4" />
         <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-12">
-          Education
+          Certifications
         </h1>
         <div className="flex flex-wrap m-4">
-          {certifications.map((certification) => (
+          {certifications2.map((certification) => (
             <div className="p-4 md:w-1/2 w-full">
               <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
                 <TerminalIcon className="block w-8 text-gray-500 mb-4" />
