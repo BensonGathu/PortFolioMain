@@ -1,6 +1,11 @@
 export const certifications2 = [
     {
-      title: "AWS Solutions Architect",
+      title: "AWS Certified Solutions Architect",
+      institution: "AWS",
+      year: "2025 - 2028",
+    },
+    {
+      title: "AWS Certified Cloud Practitioner",
       institution: "AWS",
       year: "2025 - 2028",
     },
