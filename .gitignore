@@ -1,3 +1,5 @@
 portfolio-front/.env
 portfolio-front/node_modules/
 portfolioApi/.env
+.vercel
+.env

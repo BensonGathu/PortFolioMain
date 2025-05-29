@@ -6,7 +6,7 @@ export const myProjects = [
    description: "A web-based platform where users can browse and order a variety of freshly baked pastry products online. The system allows the owner to upload and manage products, including images, descriptions, and prices. Customers can easily browse the selection, place orders, and choose from various payment options for a seamless shopping experience. The platform also offers features for managing orders and tracking delivery status, ensuring a convenient and efficient process for both the owner and the clients.",
     title: "Kate's Krusty Kreations",
     stack: "MERN",
-    languages: "Flutter, Nodejs, MySQL",
+    languages: "React, Nodejs, MySQL",
   },
   {
     code_link: "https://github.com/BensonGathu/AVA",
