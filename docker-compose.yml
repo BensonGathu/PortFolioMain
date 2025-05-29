@@ -1,7 +1,7 @@
 version: '3.1'
 services:
   backendAPI:
-    image: bensongathu/portfolio-backendapi:1.0.0
+    image:
     build:  ./portfolioApi
     restart: always
     ports:
@@ -11,7 +11,7 @@ services:
       - postgres
 
   frontend:
-    image: bensongathu/portfolio-frontend:1.0.0
+    image: 
     build:  ./portfolio-front
     restart: always
     ports:
@@ -22,12 +22,12 @@ services:
     container_name: postgres
     image: postgres
     environment:
-    - POSTGRES_USER=ben
-    - POSTGRES_DB=resume
-    - POSTGRES_PASSWORD=portfolio2023
+    - POSTGRES_USER
+    - POSTGRES_DB
+    - POSTGRES_PASSWORD
 
     ports:
-      - 5432:5432
+      - 
     
     command: postgresdb
 
@@ -40,7 +40,7 @@ services:
         ports:
             - '6379:6379'
         environment:
-          - REDIS_PASSWORD=TransP0rt2023
+          - REDIS_PASSWORD=
 
 volumes:
   pgdata:
