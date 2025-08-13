@@ -4,17 +4,18 @@ export const certifications2 = [
       institution: "AWS",
       year: "2025 - 2028",
     },
-    {
-      title: "AWS Certified Cloud Practitioner",
-      institution: "AWS",
-      year: "2025 - 2028",
-    },
-       {
+     {
       title: "Kubernetes and Cloud Native Associate (KCNA)",
       institution: "The Linux Foundation",
       year: "2025 - 2027",
     },
     
+    {
+      title: "AWS Certified Cloud Practitioner",
+      institution: "AWS",
+      year: "2025 - 2028",
+    },
+      
 
     // {
     //   title: "DevOps Engineering",
