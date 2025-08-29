@@ -15,6 +15,11 @@ export const certifications2 = [
       institution: "AWS",
       year: "2025 - 2028",
     },
+     {
+      title: "Terraform Associate",
+      institution: "HashiCorp",
+      year: "2025 - 2027",
+    },
       
 
     // {
